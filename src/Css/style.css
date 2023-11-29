@@ -1,0 +1,97 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo {
+  width: 800px;
+  height: 402px;
+  background-image: url("../images/bg-repeat.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo .instrucoes {
+  margin-left: 50px;
+  width: 400px;
+  margin-right: 60px;
+}
+
+.conteudo .instrucoes h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 11px;
+}
+
+.conteudo .instrucoes p {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.conteudo .form form {
+  margin-right: 50px;
+  background-color: #ffffff;
+  width: 340px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 21px;
+}
+
+.conteudo .form .formulario-input {
+  width: 298px;
+  height: 35.11px;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.conteudo .form .input-with-tooltip {
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  .campo-obrigatorio {
+    color: #f52e2e;
+    visibility: hidden;
+  }
+  .campo-obrigatorioshow {
+    visibility: inherit;
+  }
+}
+
+.conteudo .form .formulario-input::after {
+  content: "Campo obrigatório*";
+  color: #f52e2e;
+}
+
+.conteudo .form .formulario-input.mensagem {
+  height: 100px;
+  padding: 8px 5px;
+}
+.conteudo .form p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.conteudo .form .btn {
+  background-color: #3ccc87;
+  width: 298px;
+  height: 41.13px;
+  color: white;
+  cursor: pointer;
+}
+
+.conteudo .formulario-input.campo-nao-preenchido {
+  border: solid 1px #f52e2e;
+}
+
+.conteudo .formulario-input.campo-preenchido {
+  border: solid 1px #00c22b;
+}
