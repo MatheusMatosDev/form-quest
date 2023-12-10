@@ -73,6 +73,7 @@ body {
 .conteudo .form .formulario-input.mensagem {
   height: 100px;
   padding: 8px 5px;
+  resize: none;
 }
 .conteudo .form p {
   font-size: 1.5rem;
